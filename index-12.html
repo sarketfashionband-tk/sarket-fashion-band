@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sarket Fashion Band - Stylish shirts, pants and casual wear.">
+  <title>Sarket Fashion Band</title>
+  <style>
+    :root{--ink:#20242b;--muted:#69717d;--paper:#f6f7f9;--accent:#d9a441;--green:#128c52}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
+    header{background:#20242b;color:#fff;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .brand{font-weight:900;letter-spacing:2px;font-size:1.2rem}.brand span{display:block;font-size:.72rem;letter-spacing:4px;color:var(--accent)}
+    nav a{color:#fff;text-decoration:none;margin-left:16px;font-size:.95rem}
+    .hero{padding:58px 5%;background:linear-gradient(120deg,#20242b,#424954);color:white}
+    .hero small{color:var(--accent);font-weight:bold;letter-spacing:2px}
+    .hero h1{font-size:clamp(2rem,7vw,4.2rem);line-height:1.05;margin:12px 0}
+    .hero p{max-width:520px;color:#e1e4e8}
+    .cta{display:inline-block;margin-top:12px;background:var(--accent);color:#20242b;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold}
+    main{max-width:1100px;margin:auto;padding:34px 5%}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}
+    h2{margin:0 0 6px}.muted{color:var(--muted)}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:22px}
+    .card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 20px #18202b0d}
+    .product-image{height:220px;background:#e7e9ed;display:flex;align-items:center;justify-content:center;color:#7b8490;font-size:3rem}
+    .product-image img{width:100%;height:100%;object-fit:cover}
+    .card-body{padding:16px}.card h3{margin:0 0 6px;font-size:1.08rem}.price{font-size:1.15rem;font-weight:bold;margin:10px 0}
+    .order{display:block;text-align:center;background:var(--green);color:white;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold}
+    .about{background:#fff;border-radius:14px;padding:22px;margin-top:30px}
+    footer{background:#20242b;color:#dfe3e8;padding:26px 5%;text-align:center}
+    .float-wa{position:fixed;right:16px;bottom:18px;background:var(--green);color:#fff;text-decoration:none;padding:13px 16px;border-radius:30px;box-shadow:0 5px 18px #0003;font-weight:bold}
+    @media(max-width:500px){nav a{margin-left:8px;font-size:.85rem}.hero{padding-top:42px;padding-bottom:42px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">SARKET <span>FASHION BAND</span></div>
+    <nav><a href="#collection">Collection</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="hero">
+    <small>NEW COLLECTION</small>
+    <h1>Wear Your<br>Own Style.</h1>
+    <p>স্টাইলিশ শার্ট, প্যান্ট ও ক্যাজুয়াল পোশাক—আপনার প্রতিদিনের লুকের জন্য।</p>
+    <a class="cta" href="#collection">কালেকশন দেখুন</a>
+  </section>
+
+  <main>
+    <section id="collection">
+      <div class="section-head">
+        <div><h2>Latest Collection</h2><div class="muted">আমাদের পছন্দের কিছু ডিজাইন</div></div>
+      </div>
+      <div class="products">
+        <article class="card">
+          <div class="product-image" aria-label="Product image placeholder">👕</div>
+          <div class="card-body">
+            <h3>Printed Design Shirt</h3>
+            <div class="muted">Comfortable fabric · Short sleeve</div>
+            <div class="price">৳550</div>
+            <a class="order" target="_blank" rel="noopener" href="https://wa.me/8801600133312?text=Hello%20Sarket%20Fashion%20Band%2C%20I%20want%20to%20order%20the%20Printed%20Design%20Shirt.">WhatsApp-এ অর্ডার</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="product-image" aria-label="Product image placeholder">👖</div>
+          <div class="card-body">
+            <h3>Casual Pants</h3>
+            <div class="muted">Everyday casual wear</div>
+            <div class="price">দাম জানতে যোগাযোগ করুন</div>
+            <a class="order" target="_blank" rel="noopener" href="https://wa.me/8801600133312?text=Hello%20Sarket%20Fashion%20Band%2C%20I%20want%20to%20know%20about%20Casual%20Pants.">দাম জানতে WhatsApp</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="product-image" aria-label="Product image placeholder">✨</div>
+          <div class="card-body">
+            <h3>New Arrival</h3>
+            <div class="muted">নতুন কালেকশন শিগগিরই</div>
+            <div class="price">শিগগিরই আসছে</div>
+            <a class="order" target="_blank" rel="noopener" href="https://wa.me/8801600133312?text=Hello%20Sarket%20Fashion%20Band%2C%20please%20share%20your%20latest%20collection.">কালেকশন জানতে চান</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Sarket</h2>
+      <p class="muted">Sarket Fashion Band-এ স্বাগতম। আপনার পছন্দের ফ্যাশন খুঁজে নিন এবং অর্ডার করতে WhatsApp-এ যোগাযোগ করুন।</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <strong>SARKET FASHION BAND</strong>
+    <p>অর্ডার ও তথ্যের জন্য: +880 1600-133312</p>
+    <p>© <span id="year"></span> Sarket Fashion Band</p>
+  </footer>
+  <a class="float-wa" target="_blank" rel="noopener" href="https://wa.me/8801600133312?text=Hello%20Sarket%20Fashion%20Band%2C%20I%20want%20to%20know%20more%20about%20your%20products.">WhatsApp</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
